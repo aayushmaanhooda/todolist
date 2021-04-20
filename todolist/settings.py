@@ -16,8 +16,6 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env(SECRET_KEY = str,)
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -25,9 +23,9 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = '28u^!i7r(lfixje^js&khf^h&1caf_**2jfjtr8r0_09(z8ugh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['enjoytodo.herokuapp.com' , 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
